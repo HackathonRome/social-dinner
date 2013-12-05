@@ -35,3 +35,12 @@ get '/courses' do
   cache_data('courses.json', courses)
   courses
 end
+
+get '/ingredients' do
+  uri = generate_uri_for('metadata/ingredient')
+  result = Net::HTTP.get_response(uri)
+  ingredients = clean_json_response(result.body, 'ingredient')
+  ingredients = "{ \"ingredients\": #{ingredients} }"
+  cache_data('ingredients.json', ingredients)
+  ingredients
+end
