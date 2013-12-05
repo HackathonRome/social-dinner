@@ -1,4 +1,5 @@
 require 'sinatra'
+require 'net/http'
 
 require File.join(File.dirname(__FILE__), 'config', 'yummly.rb') unless ENV['RACK_ENV'] == 'production'
 
