@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'net/http'
 require 'active_support/inflector'
+require 'json'
 
 require File.join(File.dirname(__FILE__), 'config', 'yummly.rb') unless ENV['RACK_ENV'] == 'production'
 
@@ -42,6 +43,15 @@ module YUMMLY
       end
     end
   end
+end
+
+get '/' do
+    apis = {
+      "/courses.json" => "GET the list of available courses",
+      "/allergies.json" => "GET the list of available allergies",
+      "/ingredients.json" => "GET the list of available ingredients"
+    }.to_json
+    "{\"apis\": #{apis} }"
 end
 
 get '/courses' do
