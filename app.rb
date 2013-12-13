@@ -47,8 +47,10 @@ end
 
 get '/' do
     apis = {
-      "/courses.json" => "GET the list of available courses",
       "/allergies.json" => "GET the list of available allergies",
+      "/courses.json" => "GET the list of available courses",
+      "/cuisines.json" => "GET the list of available cuisines",
+      "/holidays.json" => "GET the list of available holidays",
       "/ingredients.json" => "GET the list of available ingredients"
     }.to_json
     "{\"apis\": #{apis} }"
@@ -64,4 +66,12 @@ end
 
 get '/allergies' do
   YUMMLY::Client.new.get_metadata_for 'allergy'
+end
+
+get '/cuisines' do
+  YUMMLY::Client.new.get_metadata_for 'cuisine'
+end
+
+get '/holidays' do
+  YUMMLY::Client.new.get_metadata_for 'holiday'
 end
