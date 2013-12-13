@@ -56,22 +56,8 @@ get '/' do
     "{\"apis\": #{apis} }"
 end
 
-get '/courses' do
-  YUMMLY::Client.new.get_metadata_for 'course'
-end
-
-get '/ingredients' do
-  YUMMLY::Client.new.get_metadata_for 'ingredient'
-end
-
-get '/allergies' do
-  YUMMLY::Client.new.get_metadata_for 'allergy'
-end
-
-get '/cuisines' do
-  YUMMLY::Client.new.get_metadata_for 'cuisine'
-end
-
-get '/holidays' do
-  YUMMLY::Client.new.get_metadata_for 'holiday'
+%w[allergy course cuisine holiday ingredient].each do |metadata|
+  get "/#{metadata.pluralize}" do
+    YUMMLY::Client.new.get_metadata_for metadata
+  end
 end
