@@ -74,5 +74,5 @@ get '/menu/:email' do |email|
 end
 
 get '/friends/:email' do |email|
-  #redirect to('/friends.json')
+  redirect to('/friends_list.json')
 end
