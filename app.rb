@@ -69,6 +69,6 @@ end
   end
 end
 
-get '/menu' do
-  YUMMLY::Client.new.get_menu
+get '/menu/:email' do |email|
+  
 end
