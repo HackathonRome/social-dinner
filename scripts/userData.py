@@ -21,6 +21,8 @@ class UserOperations():
 
         :param jsonData:
             Holds objects containing user data, dict.
+            
+        Return object with populated information for users.
         """
         for key in jsonData:
             for user in jsonData[key]:
