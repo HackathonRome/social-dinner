@@ -9,7 +9,7 @@ describe "Courses" do
   end
 
   it "caches the courses" do
-    cache_file = File.join(File.dirname(__FILE__), '..', '..', 'public', 'courses.json')
+    cache_file = File.join(File.dirname(__FILE__), '..', '..', 'cache', 'courses.json')
     File.unlink(cache_file) if File.exists?(cache_file)
     visit '/courses'
 

@@ -8,12 +8,17 @@ require File.join(File.dirname(__FILE__), 'config', 'yummly.rb') unless ENV['RAC
 module YUMMLY
   class Client
     def get_metadata_for(resource)
+      resources = resource.pluralize
+      filename = "#{resources}.json"
+      filepath = File.join 'cache', filename
+      return File.read filepath if File.exists? filepath
+
       uri = generate_uri_for("metadata/#{resource}")
       result = Net::HTTP.get_response(uri)
       data = clean_json_response(result.body, resource)
-      resources = resource.pluralize
       data = "{ \"#{resources}\": #{data} }"
-      cache_data("#{resources}.json", data)
+
+      cache_data(filename, data)
       data
     end
 
@@ -45,7 +50,7 @@ module YUMMLY
     end
 
     def cache_data(filename, data)
-      File.open(File.join(File.dirname(__FILE__), 'public', filename), "w") do |cache_file|
+      File.open(File.join(File.dirname(__FILE__), 'cache', filename), "w") do |cache_file|
         cache_file.write data
       end
     end
@@ -65,11 +70,11 @@ end
 get '/' do
     { apis: 
       {
-        "/allergies.json" => "GET the list of available allergies",
-        "/courses.json" => "GET the list of available courses",
-        "/cuisines.json" => "GET the list of available cuisines",
-        "/holidays.json" => "GET the list of available holidays",
-        "/ingredients.json" => "GET the list of available ingredients"
+        "/allergies" => "GET the list of available allergies",
+        "/courses" => "GET the list of available courses",
+        "/cuisines" => "GET the list of available cuisines",
+        "/holidays" => "GET the list of available holidays",
+        "/ingredients" => "GET the list of available ingredients"
       }
     }.to_json
 end
@@ -86,5 +91,5 @@ end
 
 
 get '/friends/:email' do |email|
-  File.read(File.join('public', 'friends_list.json'))
+  File.read(File.join('cache', 'friends_list.json'))
 end
