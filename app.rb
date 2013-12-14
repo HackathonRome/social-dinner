@@ -17,6 +17,13 @@ module YUMMLY
       data
     end
 
+    def get_menu
+      uri = generate_uri_for("recipes")
+      result = Net::HTTP.get_response(uri)
+      data = "{ \"response\": #{result.body} }"
+      data
+    end
+
   private
 
     def base_uri
@@ -60,4 +67,8 @@ end
   get "/#{metadata.pluralize}" do
     YUMMLY::Client.new.get_metadata_for metadata
   end
+end
+
+get '/menu' do
+  YUMMLY::Client.new.get_menu
 end
