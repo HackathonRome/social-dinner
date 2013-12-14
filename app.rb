@@ -22,13 +22,6 @@ module YUMMLY
       data
     end
 
-    def get_menu
-      uri = generate_uri_for("recipes")
-      result = Net::HTTP.get_response(uri)
-      data = "{ \"response\": #{result.body} }"
-      data
-    end
-
   private
 
     def base_uri
@@ -43,9 +36,9 @@ module YUMMLY
       { _app_id: ENV['YUMMLY_APP_ID'], _app_key: ENV['YUMMLY_APP_KEY'] }
     end
 
-    def generate_uri_for(endpoint)
+    def generate_uri_for(endpoint, additional_params = {})
       uri = URI("#{base_uri}#{endpoint}")
-      uri.query = URI.encode_www_form(prepare_params)
+      uri.query = URI.encode_www_form(prepare_params, additional_params)
       uri
     end
 
@@ -90,9 +83,38 @@ end
 end
 
 get '/menu/:email' do |email|
-  { error: "You must specify a list of friends." }.to_json unless are_friends_specified?
-end
+  return { error: "You must specify a list of friends." }.to_json unless are_friends_specified?
 
+  default_courses = [ "course^course-Main Dishes" , 
+                      "course^course-Desserts"    , 
+                      "course^course-Side Dishes" , 
+                      "course^course-Appetizers"  ]
+  friends = params[:friends]
+  holidays = params[:holiday] ? [ params[:holiday] ] : []
+  courses = params[:courses] || default_courses
+  users_json = JSON.parse File.read File.join('cache', 'users.json')
+  users_attributes = users['users'].select{ |k| friends.include? k }
+
+  # ?excludedCuisine[]=ita&excludedCuisine[]=fra&allowedHolidays[]=asd&
+
+  friends_attributes_keys =
+    %(allowedIngredients excludedIngredients allowedCuisine excludedCuisine)
+  friends_attributes = Hash[ friends_attributes_keys.map{ |v| [ v, [] ] } ]
+
+  users['users'].select{ |k| friends.include? k }.each_value do |attributes|
+    friends_attributes.keys.each do |k|
+      friends_attributes[k] = friends_attributes[k] | attributes[k]
+    end
+  end
+  friends_attributes['allowedCourses']  = courses
+  friends_attributes['allowedHolidays'] = holidays
+
+  friends_attributes
+
+  uri = generate_uri_for('menu', friends_attributes)
+  result = Net::HTTP.get_response(uri)
+  { response: result.body.force_encoding('UTF-8') }.to_json
+end
 
 get '/friends/:email' do |email|
   File.read(File.join('cache', 'friends_list.json'))

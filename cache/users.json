@@ -1,5 +1,5 @@
 {
-"Users":[{
+"users":{
     "provvidenza@xdinner.com": {
         "email": "provvidenza@xdinner.com",
         "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
@@ -70,5 +70,5 @@
         "excludedCuisine": [],
         "friends": []
     }
-}]
+}
 }
