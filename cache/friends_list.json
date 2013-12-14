@@ -1,39 +1,39 @@
 {
     "friends": [
         {
-            "email":"alberto@xdinner.com",
-            "name": "alberto",
-            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
-        },
+            "email": "alberto.lapera@tin.it",
+            "img": "http://www.gravatar.com/avatar/7a37404947666f4c1c579469b10cc8ee.jpg", 
+            "name": "Alberto"
+        }, 
         {
-            "email":"claudio@xdinner.com",
-            "name": "claudio",
-            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
-        },
+            "email": "awarestudents@gmail.com",
+            "img": "http://www.gravatar.com/avatar/0ed454331437a0aad01a5609b50f54b8.jpg", 
+            "name": "Andrea"
+        }, 
         {
-            "email":"luca@xdinner.com",
-            "name": "luca",
-            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
-        },
+            "email": "clarauso@gmail.com", 
+            "img": "http://www.gravatar.com/avatar/29cae085986683bd05b854945c68f02a.jpg", 
+            "name": "Claudio"
+        }, 
         {
-            "email":"matteo@xdinner.com",
-            "name": "matteo",
-            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
-        },
+            "email": "giuseppe.modarelli@gmail.com", 
+            "img": "http://www.gravatar.com/avatar/9cc8da983c656593a0b59db9e2ce37db.jpg", 
+            "name": "Giuseppe"
+        }, 
         {
-            "email":"provvidenza@xdinner.com",
-            "name": "provvidenza",
-            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
-        },
+            "email": "job@matteogobbi.it", 
+            "img": "http://www.gravatar.com/avatar/c3248b03ee61c25a9f6ca3627418283e.jpg", 
+            "name": "Matteo"
+        }, 
         {
-            "email":"andrea@xdinner.com",
-            "name": "andrea",
-            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
-        },
+            "email": "lucaiannario@gmail.com", 
+            "img": "http://www.gravatar.com/avatar/53787e4d891025e3732da3625be61a46.jpg", 
+            "name": "Luca"
+        }, 
         {
-            "email":"giuseppe@xdinner.com",
-            "name": "giuseppe",
-            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
+            "email":     "provvidenza.rizzo@gmail.com", 
+            "img": "http://www.gravatar.com/avatar/744ae7e3ab35f7f1f65f297bb95e674c.jpg", 
+            "name": "Provvidenza"
         }
     ]
 }
