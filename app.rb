@@ -127,7 +127,7 @@ get '/menu/:email' do |email|
     result = YUMMLY::Client.new.get_menu api_params
 
     course_key = course.gsub('course^course-', '')
-    JSON.parse(result.body.force_encoding('UTF-8'))['matches'].each do |recipe|
+    JSON.parse(result.body.force_encoding('UTF-8'))['matches'][0..2].each do |recipe|
 
       complete_response[:recipes][course_key] << {
         id: recipe['id'],
