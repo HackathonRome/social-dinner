@@ -21,7 +21,7 @@ class UserOperations():
 
         :param jsonData:
             Holds objects containing user data, dict.
-            
+
         Return object with populated information for users.
         """
         for key in jsonData:
@@ -118,7 +118,10 @@ class UserOperations():
 
         :param fileName:
             JSON to save, string.
-        
+
+        :param data:
+            Unserialized JSON information to save, dict.
+
         Return string with created json file name.
         """
         f = open(fileName, 'w')
