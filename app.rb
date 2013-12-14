@@ -44,7 +44,7 @@ module YUMMLY
     def generate_uri_for(endpoint, additional_params = {})
       uri = URI("#{base_uri}#{endpoint}")
       uri.query = URI.encode_www_form(prepare_params(additional_params))
-      uri
+      p uri
     end
 
     def clean_json_response(response, resource)
@@ -102,22 +102,42 @@ get '/menu/:email' do |email|
 
   # ?excludedCuisine[]=ita&excludedCuisine[]=fra&allowedHolidays[]=asd&
 
-  friends_attributes_keys =
-    %w(allowedIngredients excludedIngredients allowedCuisine excludedCuisine)
-  friends_attributes = Hash[ friends_attributes_keys.map{ |v| [ v, [] ] } ]
+  api_params_keys =
+    %w(excludedIngredient excludedCuisine)
+  api_params = Hash[ api_params_keys.map{ |v| [ "#{v}[]", [] ] } ]
 
   users_attributes.each_value do |attributes|
-    friends_attributes.keys.each do |k|
-      friends_attributes[k] = friends_attributes[k] | attributes[k]
+    api_params_keys.each do |k|
+      api_params["#{k}[]"] = api_params["#{k}[]"] | attributes[k]
     end
   end
-  friends_attributes['allowedCourses']  = courses
-  friends_attributes['allowedHolidays'] = holidays
+  
+  api_params['allowedHoliday[]'] = holidays
 
-  friends_attributes
+  complete_response = { recipes: {
+      'Main Dishes' => [],
+      'Desserts' => [],
+      'Side Dishes' => [],
+      'Appetizers' => []
+    }
+  }
 
-  result = YUMMLY::Client.new.get_menu friends_attributes
-  { response: result.body.force_encoding('UTF-8') }.to_json
+  courses.each do |course|
+    api_params['allowedCourse[]']  = courses  
+    result = YUMMLY::Client.new.get_menu api_params
+
+    course_key = course.gsub('course^course-', '')
+    JSON.parse(result.body.force_encoding('UTF-8'))['matches'].each do |recipe|
+      complete_response[:recipes][course_key] << {
+        id: recipe['id'],
+        name: recipe['recipeName'],
+        ingredients: recipe['ingredients'],
+        thumbnail: recipe['smallImageUrls']
+      }
+    end
+  end
+
+  complete_response.to_json
 end
 
 get '/friends/:email' do |email|

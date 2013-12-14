@@ -6,7 +6,7 @@
                 "cuisine^cuisine-italian", 
                 "cuisine^cuisine-cajun"
             ], 
-            "allowedIngredients": [
+            "allowedIngredient": [
                 "eel", 
                 "french fry seasoning", 
                 "turbot fillets"
@@ -17,7 +17,7 @@
                 "cuisine^cuisine-barbecue-bbq", 
                 "cuisine^cuisine-japanese"
             ], 
-            "excludedIngredients": [
+            "excludedIngredient": [
                 "vanilla essence", 
                 "ground filberts", 
                 "natto", 
@@ -33,7 +33,7 @@
                 "cuisine^cuisine-japanese", 
                 "cuisine^cuisine-thai"
             ], 
-            "allowedIngredients": [
+            "allowedIngredient": [
                 "cauliflower florets", 
                 "bottle gourd", 
                 "granulated artificial sweetener"
@@ -43,7 +43,7 @@
                 "cuisine^cuisine-american", 
                 "cuisine^cuisine-asian"
             ], 
-            "excludedIngredients": [
+            "excludedIngredient": [
                 "microwave cornbread", 
                 "porter", 
                 "country style gravy", 
@@ -59,7 +59,7 @@
                 "cuisine^cuisine-japanese", 
                 "cuisine^cuisine-southwestern"
             ], 
-            "allowedIngredients": [
+            "allowedIngredient": [
                 "king oyster mushroom", 
                 "panini", 
                 "gloucester"
@@ -70,7 +70,7 @@
                 "cuisine^cuisine-chinese", 
                 "cuisine^cuisine-thai"
             ], 
-            "excludedIngredients": [
+            "excludedIngredient": [
                 "sea clam", 
                 "low sodium canned vegetable stock", 
                 "licorice root", 
@@ -86,7 +86,7 @@
                 "cuisine^cuisine-american", 
                 "cuisine^cuisine-hungarian"
             ], 
-            "allowedIngredients": [
+            "allowedIngredient": [
                 "raw sugar", 
                 "veal loin roast", 
                 "cottage cheese"
@@ -97,7 +97,7 @@
                 "cuisine^cuisine-swedish", 
                 "cuisine^cuisine-italian"
             ], 
-            "excludedIngredients": [
+            "excludedIngredient": [
                 "25% less sodium ham", 
                 "cajun andouille", 
                 "natural jus", 
@@ -113,7 +113,7 @@
                 "cuisine^cuisine-southern", 
                 "cuisine^cuisine-spanish"
             ], 
-            "allowedIngredients": [
+            "allowedIngredient": [
                 "longaniza", 
                 "black forbidden rice", 
                 "african bird pepper"
@@ -123,7 +123,7 @@
                 "cuisine^cuisine-mediterranean", 
                 "cuisine^cuisine-southwestern"
             ], 
-            "excludedIngredients": [
+            "excludedIngredient": [
                 "low-fat sub roll", 
                 "ketjap manis", 
                 "green peas", 
@@ -139,7 +139,7 @@
                 "cuisine^cuisine-spanish", 
                 "cuisine^cuisine-german"
             ], 
-            "allowedIngredients": [
+            "allowedIngredient": [
                 "butter-flavored spray", 
                 "bombay duck", 
                 "plum sauce"
@@ -151,7 +151,7 @@
                 "cuisine^cuisine-irish", 
                 "cuisine^cuisine-french"
             ], 
-            "excludedIngredients": [
+            "excludedIngredient": [
                 "passion fruit", 
                 "sahlab", 
                 "lamb stock", 
@@ -167,7 +167,7 @@
                 "cuisine^cuisine-japanese", 
                 "cuisine^cuisine-american"
             ], 
-            "allowedIngredients": [
+            "allowedIngredient": [
                 "fillet steaks", 
                 "baby cereal", 
                 "roasted chestnuts"
@@ -177,7 +177,7 @@
                 "cuisine^cuisine-southwestern", 
                 "cuisine^cuisine-french"
             ], 
-            "excludedIngredients": [
+            "excludedIngredient": [
                 "ajwain seed", 
                 "gari", 
                 "low sodium white miso paste", 
