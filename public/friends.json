@@ -1,5 +1,5 @@
 {
-    "giuseppe@xdinner.com": [
+    "friends": [
         {
             "email":"alberto@xdinner.com",
             "name": "alberto"
@@ -16,13 +16,17 @@
             "email":"matteo@xdinner.com",
             "name": "matteo"
         },
-                {
+        {
             "email":"provvidenza@xdinner.com",
             "name": "provvidenza"
         },
-                {
+        {
             "email":"andrea@xdinner.com",
             "name": "andrea"
+        },
+        {
+            "email":"giuseppe@xdinner.com",
+            "name": "giuseppe"
         },
     ]
 }
