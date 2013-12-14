@@ -1,0 +1,69 @@
+/* 
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+[
+    "provvidenza@xdinner.com": {
+        "email": "provvidenza@xdinner.com",
+        "name": "provvidenza",
+        "allowedIngredients":[],
+        "excludedIngredients": [],
+        "allowedCuisine": [],
+        "excludedCuisine": [],
+        "friends": []
+    },
+    "andrea@xdinner.com": {
+        "email": "andrea@xdinner.com",
+        "name": "andrea",
+        "allowedIngredients":[],
+        "excludedIngredients": [],
+        "allowedCuisine": [],
+        "excludedCuisine": [],
+        "friends": []
+    },
+    "matteo@xdinner.com": {
+        "email": "matteo@xdinner.com",
+        "name": "matteo",
+        "allowedIngredients":[],
+        "excludedIngredients": [],
+        "allowedCuisine": [],
+        "excludedCuisine": [],
+        "friends": []
+    },
+    "giuseppe@xdinner.com": {
+        "email": "giuseppe@xdinner.com",
+        "name": "giuseppe",
+        "allowedIngredients":[],
+        "excludedIngredients": [],
+        "allowedCuisine": [],
+        "excludedCuisine": [],
+        "friends": []
+    },
+    "alberto@xdinner.com": {
+        "email": "alberto@xdinner.com",
+        "name": "alberto",
+        "allowedIngredients":[],
+        "excludedIngredients": [],
+        "allowedCuisine": [],
+        "excludedCuisine": [],
+        "friends": []
+    },
+    "claudio@xdinner.com": {
+        "email": "claudio@xdinner.com",
+        "name": "claudio",
+        "allowedIngredients":[],
+        "excludedIngredients": [],
+        "allowedCuisine": [],
+        "excludedCuisine": [],
+        "friends": []
+    },
+    "luca@xdinner.com": {
+        "email": "luca@xdinner.com",
+        "name": "luca",
+        "allowedIngredients":[],
+        "excludedIngredients": [],
+        "allowedCuisine": [],
+        "excludedCuisine": [],
+        "friends": []
+    },
+]
