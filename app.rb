@@ -56,15 +56,22 @@ def are_friends_specified?
   params[:friends] && params[:friends].any?
 end
 
+before do
+  headers \
+    "Access-Control-Allow-Origin" => "*",
+    "Content-Type" => "application/json"
+end
+
 get '/' do
-    apis = {
-      "/allergies.json" => "GET the list of available allergies",
-      "/courses.json" => "GET the list of available courses",
-      "/cuisines.json" => "GET the list of available cuisines",
-      "/holidays.json" => "GET the list of available holidays",
-      "/ingredients.json" => "GET the list of available ingredients"
+    { apis: 
+      {
+        "/allergies.json" => "GET the list of available allergies",
+        "/courses.json" => "GET the list of available courses",
+        "/cuisines.json" => "GET the list of available cuisines",
+        "/holidays.json" => "GET the list of available holidays",
+        "/ingredients.json" => "GET the list of available ingredients"
+      }
     }.to_json
-    "{\"apis\": #{apis} }"
 end
 
 %w[allergy course cuisine holiday ingredient].each do |metadata|
@@ -74,13 +81,10 @@ end
 end
 
 get '/menu/:email' do |email|
-  headers "Access-Control-Allow-Origin" => "*"
-  "{ \"error\": \"You must specify a list of friends.\" }" unless are_friends_specified?
-  
-  "{ \"recipies\": #{YUMMLY::Client.new.get_menu} }" 
+  { error: "You must specify a list of friends." }.to_json unless are_friends_specified?
 end
 
 
 get '/friends/:email' do |email|
-  redirect to('/friends_list.json')
+  File.read(File.join('public', 'friends_list.json'))
 end
