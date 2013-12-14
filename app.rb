@@ -35,13 +35,17 @@ module YUMMLY
       'http://api.yummly.com/v1/api/'
     end
 
+    def prepare_params(additional_params = {})
+      authorization_params.merge additional_params
+    end
+
     def authorization_params
       { _app_id: ENV['YUMMLY_APP_ID'], _app_key: ENV['YUMMLY_APP_KEY'] }
     end
 
     def generate_uri_for(endpoint)
       uri = URI("#{base_uri}#{endpoint}")
-      uri.query = URI.encode_www_form(authorization_params)
+      uri.query = URI.encode_www_form(prepare_params)
       uri
     end
 
