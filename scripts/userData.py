@@ -95,7 +95,7 @@ class UserOperations():
         :param hashLength:
             Max length of generated hash, int.
 
-        Return hex int with sent hash.
+        Return long with sent hash.
         """
         hash = hashlib.md5(sent).hexdigest()
         return hash
