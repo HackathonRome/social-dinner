@@ -22,6 +22,11 @@ module YUMMLY
       data
     end
 
+    def get_menu params
+      uri = generate_uri_for('recipes', params)
+      Net::HTTP.get_response(uri)
+    end
+
   private
 
     def base_uri
@@ -38,7 +43,7 @@ module YUMMLY
 
     def generate_uri_for(endpoint, additional_params = {})
       uri = URI("#{base_uri}#{endpoint}")
-      uri.query = URI.encode_www_form(prepare_params, additional_params)
+      uri.query = URI.encode_www_form(prepare_params(additional_params))
       uri
     end
 
@@ -92,16 +97,16 @@ get '/menu/:email' do |email|
   friends = params[:friends]
   holidays = params[:holiday] ? [ params[:holiday] ] : []
   courses = params[:courses] || default_courses
-  users_json = JSON.parse File.read File.join('cache', 'users.json')
+  users = JSON.parse File.read File.join('cache', 'users.json')
   users_attributes = users['users'].select{ |k| friends.include? k }
 
   # ?excludedCuisine[]=ita&excludedCuisine[]=fra&allowedHolidays[]=asd&
 
   friends_attributes_keys =
-    %(allowedIngredients excludedIngredients allowedCuisine excludedCuisine)
+    %w(allowedIngredients excludedIngredients allowedCuisine excludedCuisine)
   friends_attributes = Hash[ friends_attributes_keys.map{ |v| [ v, [] ] } ]
 
-  users['users'].select{ |k| friends.include? k }.each_value do |attributes|
+  users_attributes.each_value do |attributes|
     friends_attributes.keys.each do |k|
       friends_attributes[k] = friends_attributes[k] | attributes[k]
     end
@@ -111,8 +116,7 @@ get '/menu/:email' do |email|
 
   friends_attributes
 
-  uri = generate_uri_for('menu', friends_attributes)
-  result = Net::HTTP.get_response(uri)
+  result = YUMMLY::Client.new.get_menu friends_attributes
   { response: result.body.force_encoding('UTF-8') }.to_json
 end
 
