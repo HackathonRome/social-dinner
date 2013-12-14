@@ -128,11 +128,12 @@ get '/menu/:email' do |email|
 
     course_key = course.gsub('course^course-', '')
     JSON.parse(result.body.force_encoding('UTF-8'))['matches'].each do |recipe|
+
       complete_response[:recipes][course_key] << {
         id: recipe['id'],
         name: recipe['recipeName'],
         ingredients: recipe['ingredients'],
-        thumbnail: recipe['smallImageUrls']
+        thumbnail: Array(recipe['smallImageUrls'])[0]
       }
     end
   end
