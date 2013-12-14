@@ -72,3 +72,7 @@ end
 get '/menu/:email' do |email|
   "{ \"error\": \"You must specify a list of friends.\" }"
 end
+
+get '/friends/:email' do |email|
+  #redirect to('/friends.json')
+end
