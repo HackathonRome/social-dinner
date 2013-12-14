@@ -2,31 +2,38 @@
     "friends": [
         {
             "email":"alberto@xdinner.com",
-            "name": "alberto"
+            "name": "alberto",
+            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
         },
         {
             "email":"claudio@xdinner.com",
-            "name": "claudio"
+            "name": "claudio",
+            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
         },
         {
             "email":"luca@xdinner.com",
-            "name": "luca"
+            "name": "luca",
+            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
         },
         {
             "email":"matteo@xdinner.com",
-            "name": "matteo"
+            "name": "matteo",
+            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
         },
         {
             "email":"provvidenza@xdinner.com",
-            "name": "provvidenza"
+            "name": "provvidenza",
+            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
         },
         {
             "email":"andrea@xdinner.com",
-            "name": "andrea"
+            "name": "andrea",
+            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
         },
         {
             "email":"giuseppe@xdinner.com",
-            "name": "giuseppe"
+            "name": "giuseppe",
+            "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg"
         },
     ]
 }
