@@ -1,74 +1,198 @@
 {
-"users":{
-    "provvidenza@xdinner.com": {
-        "email": "provvidenza@xdinner.com",
-        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
-        "name": "Provvidenza",
-        "allowedIngredients":[],
-        "excludedIngredients": [],
-        "allowedCuisine": [],
-        "excludedCuisine": [],
-        "friends": []
-    },
-    "andrea@xdinner.com": {
-        "email": "andrea@xdinner.com",
-        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
-        "name": "Andrea",
-        "allowedIngredients":[],
-        "excludedIngredients": [],
-        "allowedCuisine": [],
-        "excludedCuisine": [],
-        "friends": []
-    },
-    "matteo@xdinner.com": {
-        "email": "matteo@xdinner.com",
-        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
-        "name": "Matteo",
-        "allowedIngredients":[],
-        "excludedIngredients": [],
-        "allowedCuisine": [],
-        "excludedCuisine": [],
-        "friends": []
-    },
-    "giuseppe@xdinner.com": {
-        "email": "giuseppe@xdinner.com",
-        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
-        "name": "Giuseppe",
-        "allowedIngredients":[],
-        "excludedIngredients": [],
-        "allowedCuisine": [],
-        "excludedCuisine": [],
-        "friends": []
-    },
-    "alberto@xdinner.com": {
-        "email": "alberto@xdinner.com",
-        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
-        "name": "Alberto",
-        "allowedIngredients":[],
-        "excludedIngredients": [],
-        "allowedCuisine": [],
-        "excludedCuisine": [],
-        "friends": []
-    },
-    "claudio@xdinner.com": {
-        "email": "claudio@xdinner.com",
-        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
-        "name": "Claudio",
-        "allowedIngredients":[],
-        "excludedIngredients": [],
-        "allowedCuisine": [],
-        "excludedCuisine": [],
-        "friends": []
-    },
-    "luca@xdinner.com": {
-        "email": "luca@xdinner.com",
-        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
-        "name": "Luca",
-        "allowedIngredients":[],
-        "excludedIngredients": [],
-        "allowedCuisine": [],
-        "excludedCuisine": [],
-        "friends": []
+    "users": {
+        "alberto.lapera@tin.it": {
+            "allowedCuisine": [
+                "cuisine-mexican", 
+                "cuisine-southern", 
+                "cuisine-thai"
+            ], 
+            "allowedIngredients": [
+                "caribe chile", 
+                "hard winter wheatberries", 
+                "breaded chicken cutlets"
+            ], 
+            "email": "alberto.lapera@tin.it", 
+            "excludedCuisine": [
+                "cuisine-portuguese", 
+                "cuisine-irish", 
+                "cuisine-moroccan", 
+                "cuisine-hawaiian"
+            ], 
+            "excludedIngredients": [
+                "mascarpone cheese", 
+                "sweet pickle", 
+                "crenshaw melon", 
+                "nonfat vanilla frozen yogurt"
+            ], 
+            "friends": [], 
+            "img": "http://www.gravatar.com/avatar/7a37404947666f4c1c579469b10cc8ee.jpg", 
+            "name": "Alberto"
+        }, 
+        "awarestudents@gmail.com": {
+            "allowedCuisine": [
+                "cuisine-german", 
+                "cuisine-hungarian", 
+                "cuisine-mediterranean"
+            ], 
+            "allowedIngredients": [
+                "basmati rice", 
+                "bunching lettuce", 
+                "chile colorado"
+            ], 
+            "email": "awarestudents@gmail.com", 
+            "excludedCuisine": [
+                "cuisine-asian", 
+                "cuisine-american", 
+                "cuisine-italian"
+            ], 
+            "excludedIngredients": [
+                "jamon serrano", 
+                "smoked sable", 
+                "nova", 
+                "screwpine leaves"
+            ], 
+            "friends": [], 
+            "img": "http://www.gravatar.com/avatar/0ed454331437a0aad01a5609b50f54b8.jpg", 
+            "name": "Andrea"
+        }, 
+        "clarauso@gmail.com": {
+            "allowedCuisine": [
+                "cuisine-asian", 
+                "cuisine-chinese", 
+                "cuisine-portuguese"
+            ], 
+            "allowedIngredients": [
+                "young pandan leaves", 
+                "citrus roses", 
+                "sour salt"
+            ], 
+            "email": "clarauso@gmail.com", 
+            "excludedCuisine": [
+                "cuisine-cuban", 
+                "cuisine-french", 
+                "cuisine-southwestern"
+            ], 
+            "excludedIngredients": [
+                "sambal oelek", 
+                "boneless skinless cod fillets", 
+                "white walnut", 
+                "mayo"
+            ], 
+            "friends": [], 
+            "img": "http://www.gravatar.com/avatar/29cae085986683bd05b854945c68f02a.jpg", 
+            "name": "Claudio"
+        }, 
+        "giuseppe.modarelli@gmail.com": {
+            "allowedCuisine": [
+                "cuisine-cajun", 
+                "cuisine-asian", 
+                "cuisine-japanese"
+            ], 
+            "allowedIngredients": [
+                "plantains", 
+                "peppermint schnapps", 
+                "milk"
+            ], 
+            "email": "giuseppe.modarelli@gmail.com", 
+            "excludedCuisine": [
+                "cuisine-hawaiian", 
+                "cuisine-greek", 
+                "cuisine-indian", 
+                "cuisine-southwestern"
+            ], 
+            "excludedIngredients": [
+                "bucatini", 
+                "hot fudge topping", 
+                "char sui pork", 
+                "five alive juice"
+            ], 
+            "friends": [], 
+            "img": "http://www.gravatar.com/avatar/9cc8da983c656593a0b59db9e2ce37db.jpg", 
+            "name": "Giuseppe"
+        }, 
+        "job@matteogobbi.it": {
+            "allowedCuisine": [
+                "cuisine-japanese", 
+                "cuisine-asian", 
+                "cuisine-american"
+            ], 
+            "allowedIngredients": [
+                "tube pan", 
+                "cholent", 
+                "myers"
+            ], 
+            "email": "job@matteogobbi.it", 
+            "excludedCuisine": [
+                "cuisine-mediterranean", 
+                "cuisine-swedish", 
+                "cuisine-mexican", 
+                "cuisine-hawaiian"
+            ], 
+            "excludedIngredients": [
+                "chocolate malt ice cream", 
+                "winter melon", 
+                "fresh bean", 
+                "dry gravy maker mix"
+            ], 
+            "friends": [], 
+            "img": "http://www.gravatar.com/avatar/c3248b03ee61c25a9f6ca3627418283e.jpg", 
+            "name": "Matteo"
+        }, 
+        "lucaiannario@gmail.com": {
+            "allowedCuisine": [
+                "cuisine-american", 
+                "cuisine-barbecue-bbq", 
+                "cuisine-swedish"
+            ], 
+            "allowedIngredients": [
+                "tea powder", 
+                "wafer biscuit", 
+                "low sodium vegetable bouillon granules"
+            ], 
+            "email": "lucaiannario@gmail.com", 
+            "excludedCuisine": [
+                "cuisine-cajun", 
+                "cuisine-italian", 
+                "cuisine-cuban", 
+                "cuisine-mexican"
+            ], 
+            "excludedIngredients": [
+                "dark lager", 
+                "tenderloin roast", 
+                "chop suey meat", 
+                "herbsaint"
+            ], 
+            "friends": [], 
+            "img": "http://www.gravatar.com/avatar/53787e4d891025e3732da3625be61a46.jpg", 
+            "name": "Luca"
+        }, 
+        "provvidenza.rizzo@gmail.com": {
+            "allowedCuisine": [
+                "cuisine-portuguese", 
+                "cuisine-mexican", 
+                "cuisine-chinese"
+            ], 
+            "allowedIngredients": [
+                "preserves", 
+                "crema", 
+                "black moss"
+            ], 
+            "email": "provvidenza.rizzo@gmail.com", 
+            "excludedCuisine": [
+                "cuisine-asian", 
+                "cuisine-thai", 
+                "cuisine-english", 
+                "cuisine-spanish"
+            ], 
+            "excludedIngredients": [
+                "ravioli filling", 
+                "dried lemon peel", 
+                "german mustard", 
+                "chili pepper flakes"
+            ], 
+            "friends": [], 
+            "img": "http://www.gravatar.com/avatar/744ae7e3ab35f7f1f65f297bb95e674c.jpg", 
+            "name": "Provvidenza"
+        }
     }
-}
 }
