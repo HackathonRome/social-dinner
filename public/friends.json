@@ -1,0 +1,28 @@
+{
+    "giuseppe@xdinner.com": [
+        {
+            "email":"alberto@xdinner.com",
+            "name": "alberto"
+        },
+        {
+            "email":"claudio@xdinner.com",
+            "name": "claudio"
+        },
+        {
+            "email":"luca@xdinner.com",
+            "name": "luca"
+        },
+        {
+            "email":"matteo@xdinner.com",
+            "name": "matteo"
+        },
+                {
+            "email":"provvidenza@xdinner.com",
+            "name": "provvidenza"
+        },
+                {
+            "email":"andrea@xdinner.com",
+            "name": "andrea"
+        },
+    ]
+}
