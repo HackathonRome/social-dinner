@@ -5,4 +5,9 @@ describe "Menu request" do
 		visit '/menu'
 		expect(page.status_code).to eq(404)
 	end
+
+	it "returns " do
+		visit '/menu/giuseppe.modarelli@gmail.com'
+		expect(page.body).to match /You must specify a list of friends/
+	end
 end
