@@ -52,6 +52,10 @@ module YUMMLY
   end
 end
 
+def are_friends_specified?
+  params[:friends] && params[:friends].any?
+end
+
 get '/' do
     apis = {
       "/allergies.json" => "GET the list of available allergies",
@@ -68,10 +72,14 @@ end
     YUMMLY::Client.new.get_metadata_for metadata
   end
 end
-
+friends[] 
 get '/menu/:email' do |email|
-  "{ \"error\": \"You must specify a list of friends.\" }"
+  headers "Access-Control-Allow-Origin" => "*"
+  "{ \"error\": \"You must specify a list of friends.\" }" unless are_friends_specified?
+  
+  "{ \"recipies\": #{YUMMLY::Client.new.get_menu} }" 
 end
+
 
 get '/friends/:email' do |email|
   redirect to('/friends_list.json')
