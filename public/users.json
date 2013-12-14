@@ -1,11 +1,9 @@
-/* 
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-[
+{
+"Users":[{
     "provvidenza@xdinner.com": {
         "email": "provvidenza@xdinner.com",
-        "name": "provvidenza",
+        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
+        "name": "Provvidenza",
         "allowedIngredients":[],
         "excludedIngredients": [],
         "allowedCuisine": [],
@@ -14,7 +12,8 @@
     },
     "andrea@xdinner.com": {
         "email": "andrea@xdinner.com",
-        "name": "andrea",
+        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
+        "name": "Andrea",
         "allowedIngredients":[],
         "excludedIngredients": [],
         "allowedCuisine": [],
@@ -23,7 +22,8 @@
     },
     "matteo@xdinner.com": {
         "email": "matteo@xdinner.com",
-        "name": "matteo",
+        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
+        "name": "Matteo",
         "allowedIngredients":[],
         "excludedIngredients": [],
         "allowedCuisine": [],
@@ -32,7 +32,8 @@
     },
     "giuseppe@xdinner.com": {
         "email": "giuseppe@xdinner.com",
-        "name": "giuseppe",
+        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
+        "name": "Giuseppe",
         "allowedIngredients":[],
         "excludedIngredients": [],
         "allowedCuisine": [],
@@ -41,7 +42,8 @@
     },
     "alberto@xdinner.com": {
         "email": "alberto@xdinner.com",
-        "name": "alberto",
+        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
+        "name": "Alberto",
         "allowedIngredients":[],
         "excludedIngredients": [],
         "allowedCuisine": [],
@@ -50,7 +52,8 @@
     },
     "claudio@xdinner.com": {
         "email": "claudio@xdinner.com",
-        "name": "claudio",
+        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
+        "name": "Claudio",
         "allowedIngredients":[],
         "excludedIngredients": [],
         "allowedCuisine": [],
@@ -59,11 +62,13 @@
     },
     "luca@xdinner.com": {
         "email": "luca@xdinner.com",
-        "name": "luca",
+        "img": "http://www.clker.com/cliparts/O/N/h/C/W/z/teamstijl-person-icon-orange.svg",
+        "name": "Luca",
         "allowedIngredients":[],
         "excludedIngredients": [],
         "allowedCuisine": [],
         "excludedCuisine": [],
         "friends": []
-    },
-]
+    }
+}]
+}
