@@ -72,7 +72,7 @@ end
     YUMMLY::Client.new.get_metadata_for metadata
   end
 end
-friends[] 
+
 get '/menu/:email' do |email|
   headers "Access-Control-Allow-Origin" => "*"
   "{ \"error\": \"You must specify a list of friends.\" }" unless are_friends_specified?
