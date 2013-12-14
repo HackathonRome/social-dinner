@@ -2,27 +2,26 @@
     "users": {
         "alberto.lapera@tin.it": {
             "allowedCuisine": [
-                "cuisine-mexican", 
-                "cuisine-southern", 
-                "cuisine-thai"
+                "cuisine^cuisine-cuban", 
+                "cuisine^cuisine-italian", 
+                "cuisine^cuisine-cajun"
             ], 
             "allowedIngredients": [
-                "caribe chile", 
-                "hard winter wheatberries", 
-                "breaded chicken cutlets"
+                "eel", 
+                "french fry seasoning", 
+                "turbot fillets"
             ], 
             "email": "alberto.lapera@tin.it", 
             "excludedCuisine": [
-                "cuisine-portuguese", 
-                "cuisine-irish", 
-                "cuisine-moroccan", 
-                "cuisine-hawaiian"
+                "cuisine^cuisine-southwestern", 
+                "cuisine^cuisine-barbecue-bbq", 
+                "cuisine^cuisine-japanese"
             ], 
             "excludedIngredients": [
-                "mascarpone cheese", 
-                "sweet pickle", 
-                "crenshaw melon", 
-                "nonfat vanilla frozen yogurt"
+                "vanilla essence", 
+                "ground filberts", 
+                "natto", 
+                "madeira"
             ], 
             "friends": [], 
             "img": "http://www.gravatar.com/avatar/7a37404947666f4c1c579469b10cc8ee.jpg", 
@@ -30,26 +29,25 @@
         }, 
         "awarestudents@gmail.com": {
             "allowedCuisine": [
-                "cuisine-german", 
-                "cuisine-hungarian", 
-                "cuisine-mediterranean"
+                "cuisine^cuisine-mexican", 
+                "cuisine^cuisine-japanese", 
+                "cuisine^cuisine-thai"
             ], 
             "allowedIngredients": [
-                "basmati rice", 
-                "bunching lettuce", 
-                "chile colorado"
+                "cauliflower florets", 
+                "bottle gourd", 
+                "granulated artificial sweetener"
             ], 
             "email": "awarestudents@gmail.com", 
             "excludedCuisine": [
-                "cuisine-asian", 
-                "cuisine-american", 
-                "cuisine-italian"
+                "cuisine^cuisine-american", 
+                "cuisine^cuisine-asian"
             ], 
             "excludedIngredients": [
-                "jamon serrano", 
-                "smoked sable", 
-                "nova", 
-                "screwpine leaves"
+                "microwave cornbread", 
+                "porter", 
+                "country style gravy", 
+                "dried porcini mushrooms"
             ], 
             "friends": [], 
             "img": "http://www.gravatar.com/avatar/0ed454331437a0aad01a5609b50f54b8.jpg", 
@@ -57,26 +55,26 @@
         }, 
         "clarauso@gmail.com": {
             "allowedCuisine": [
-                "cuisine-asian", 
-                "cuisine-chinese", 
-                "cuisine-portuguese"
+                "cuisine^cuisine-mexican", 
+                "cuisine^cuisine-japanese", 
+                "cuisine^cuisine-southwestern"
             ], 
             "allowedIngredients": [
-                "young pandan leaves", 
-                "citrus roses", 
-                "sour salt"
+                "king oyster mushroom", 
+                "panini", 
+                "gloucester"
             ], 
             "email": "clarauso@gmail.com", 
             "excludedCuisine": [
-                "cuisine-cuban", 
-                "cuisine-french", 
-                "cuisine-southwestern"
+                "cuisine^cuisine-cajun", 
+                "cuisine^cuisine-chinese", 
+                "cuisine^cuisine-thai"
             ], 
             "excludedIngredients": [
-                "sambal oelek", 
-                "boneless skinless cod fillets", 
-                "white walnut", 
-                "mayo"
+                "sea clam", 
+                "low sodium canned vegetable stock", 
+                "licorice root", 
+                "dried banana"
             ], 
             "friends": [], 
             "img": "http://www.gravatar.com/avatar/29cae085986683bd05b854945c68f02a.jpg", 
@@ -84,27 +82,26 @@
         }, 
         "giuseppe.modarelli@gmail.com": {
             "allowedCuisine": [
-                "cuisine-cajun", 
-                "cuisine-asian", 
-                "cuisine-japanese"
+                "cuisine^cuisine-french", 
+                "cuisine^cuisine-american", 
+                "cuisine^cuisine-hungarian"
             ], 
             "allowedIngredients": [
-                "plantains", 
-                "peppermint schnapps", 
-                "milk"
+                "raw sugar", 
+                "veal loin roast", 
+                "cottage cheese"
             ], 
             "email": "giuseppe.modarelli@gmail.com", 
             "excludedCuisine": [
-                "cuisine-hawaiian", 
-                "cuisine-greek", 
-                "cuisine-indian", 
-                "cuisine-southwestern"
+                "cuisine^cuisine-thai", 
+                "cuisine^cuisine-swedish", 
+                "cuisine^cuisine-italian"
             ], 
             "excludedIngredients": [
-                "bucatini", 
-                "hot fudge topping", 
-                "char sui pork", 
-                "five alive juice"
+                "25% less sodium ham", 
+                "cajun andouille", 
+                "natural jus", 
+                "commercial low sodium chicken broth"
             ], 
             "friends": [], 
             "img": "http://www.gravatar.com/avatar/9cc8da983c656593a0b59db9e2ce37db.jpg", 
@@ -112,27 +109,25 @@
         }, 
         "job@matteogobbi.it": {
             "allowedCuisine": [
-                "cuisine-japanese", 
-                "cuisine-asian", 
-                "cuisine-american"
+                "cuisine^cuisine-indian", 
+                "cuisine^cuisine-southern", 
+                "cuisine^cuisine-spanish"
             ], 
             "allowedIngredients": [
-                "tube pan", 
-                "cholent", 
-                "myers"
+                "longaniza", 
+                "black forbidden rice", 
+                "african bird pepper"
             ], 
             "email": "job@matteogobbi.it", 
             "excludedCuisine": [
-                "cuisine-mediterranean", 
-                "cuisine-swedish", 
-                "cuisine-mexican", 
-                "cuisine-hawaiian"
+                "cuisine^cuisine-mediterranean", 
+                "cuisine^cuisine-southwestern"
             ], 
             "excludedIngredients": [
-                "chocolate malt ice cream", 
-                "winter melon", 
-                "fresh bean", 
-                "dry gravy maker mix"
+                "low-fat sub roll", 
+                "ketjap manis", 
+                "green peas", 
+                "garden vegetable 1/3 less fat than cream cheese"
             ], 
             "friends": [], 
             "img": "http://www.gravatar.com/avatar/c3248b03ee61c25a9f6ca3627418283e.jpg", 
@@ -140,27 +135,27 @@
         }, 
         "lucaiannario@gmail.com": {
             "allowedCuisine": [
-                "cuisine-american", 
-                "cuisine-barbecue-bbq", 
-                "cuisine-swedish"
+                "cuisine^cuisine-american", 
+                "cuisine^cuisine-spanish", 
+                "cuisine^cuisine-german"
             ], 
             "allowedIngredients": [
-                "tea powder", 
-                "wafer biscuit", 
-                "low sodium vegetable bouillon granules"
+                "butter-flavored spray", 
+                "bombay duck", 
+                "plum sauce"
             ], 
             "email": "lucaiannario@gmail.com", 
             "excludedCuisine": [
-                "cuisine-cajun", 
-                "cuisine-italian", 
-                "cuisine-cuban", 
-                "cuisine-mexican"
+                "cuisine^cuisine-greek", 
+                "cuisine^cuisine-thai", 
+                "cuisine^cuisine-irish", 
+                "cuisine^cuisine-french"
             ], 
             "excludedIngredients": [
-                "dark lager", 
-                "tenderloin roast", 
-                "chop suey meat", 
-                "herbsaint"
+                "passion fruit", 
+                "sahlab", 
+                "lamb stock", 
+                "whole nutmegs"
             ], 
             "friends": [], 
             "img": "http://www.gravatar.com/avatar/53787e4d891025e3732da3625be61a46.jpg", 
@@ -168,27 +163,25 @@
         }, 
         "provvidenza.rizzo@gmail.com": {
             "allowedCuisine": [
-                "cuisine-portuguese", 
-                "cuisine-mexican", 
-                "cuisine-chinese"
+                "cuisine^cuisine-barbecue-bbq", 
+                "cuisine^cuisine-japanese", 
+                "cuisine^cuisine-american"
             ], 
             "allowedIngredients": [
-                "preserves", 
-                "crema", 
-                "black moss"
+                "fillet steaks", 
+                "baby cereal", 
+                "roasted chestnuts"
             ], 
             "email": "provvidenza.rizzo@gmail.com", 
             "excludedCuisine": [
-                "cuisine-asian", 
-                "cuisine-thai", 
-                "cuisine-english", 
-                "cuisine-spanish"
+                "cuisine^cuisine-southwestern", 
+                "cuisine^cuisine-french"
             ], 
             "excludedIngredients": [
-                "ravioli filling", 
-                "dried lemon peel", 
-                "german mustard", 
-                "chili pepper flakes"
+                "ajwain seed", 
+                "gari", 
+                "low sodium white miso paste", 
+                "caperberries"
             ], 
             "friends": [], 
             "img": "http://www.gravatar.com/avatar/744ae7e3ab35f7f1f65f297bb95e674c.jpg", 
